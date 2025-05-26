@@ -1,0 +1,271 @@
+/*body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+/* Todo lo del header 
+background-color: #4F5BFF;*/
+header {
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+.section{
+    background-color: #4f5bff;
+    width: 100%;
+    height: 1.5rem;
+}
+/*div del header que contiene el logo, buscador e iconos*/
+header div{
+    background-color: #ffffff;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*LOGO*/
+.logoEmpresa{
+
+    width: 10%;
+    display: flex;
+    justify-content: start;
+}
+/*Estilos para el div buscador | imput | boton*/
+.buscador{
+    width: 65%;
+}
+.formBuscador{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.textobuscador{
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #4f5bff;
+    border-right: none;
+    
+}
+.botonBuscar{
+    width: 10%;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #4f5bff;
+    border-left: none;
+}
+/* Estilos para los iconos de la interfaz */
+.logoInterfaz{
+    width: 20%;
+
+}
+.iconosInterfaz{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para el menú horizontal */
+.menuHorizontal{
+    width: 100%;
+    height: 3rem;
+}
+
+.menu{
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:2px solid  #4f5bff ;
+
+}
+/* Fin del header */
+
+
+
+
+/* Todo lo del main */
+main{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+/* Estilos para la sección de banners*/
+.videoBanner{
+    width: 100%;
+
+}
+.videoBanne{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de novedades /productos */
+
+.novedades {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    padding: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px #4f5bff;
+
+}
+/* Sección de novedades */
+.productos{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fotosProductos{
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* sección de ofertas */
+/* Sección de productos destacados */
+
+/* seccion de forma de contacto */
+
+.formularioContacto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.tituloFormulario{ 
+    width: 95%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    color: #4f5bff;
+    text-shadow: #1b1a1a 1px 1px 2px;
+
+}
+.texFormulario{
+    width: 100%;
+    display: flex;
+
+}
+.parrafoFormulario{
+    width: 30%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #1b1a1a;
+}
+.pForm{
+    width: 80%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divformulario {
+    background-color: #ffffff;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inicioFormulario{
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+}
+.labelFormulario{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #1b1a1a;
+    margin-bottom: 5px;
+}
+.inputLabel{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4f5bff;
+    margin-bottom: 10px;
+}
+.buttonForm{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: #4f5bff 0px 4px 8px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Todo lo del footer */        
+
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-wrap: wrap;
+
+}
+.footerNav {
+    width: 100%;
+    padding: 50px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+
+}
+.ulfooter li{
+    line-height: 50;
+}
+
+
+
+
+
+
+
+ul {
+    list-style: none;   /* Eliminar los puntos de la lista */
+}
+a {
+    text-decoration: none;    /* Eliminar el subrayado de los enlaces */
+    color: #4f5bff;   /* Cambiar el color de los enlaces */
+}
