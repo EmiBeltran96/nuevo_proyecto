@@ -1,32 +1,37 @@
-/*body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}*/
+/* ----------------------CORRECCIONES PARA EL NAVEGADOR ----------------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ---------------------- AJUSTES AL BODY ---------------------- */
 body{
+    padding-top: 210px;
     margin: 0;
     background-color: rgb(255, 255, 255);
+    
 }
-/* Todo lo del header 
-background-color: #4F5BFF;*/
+
+/* ---------------------- AJUSTES AL HEADER ---------------------- */
+/* Ajuste general del header como tamaño-color-anclaje fijo */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index:1000 ;
     background-color: #ffffff;
     
 }
+/* Esto es la linea superior de todo el header */
 .section{
     background-color: #4f5bff;
     width: 100%;
     height: 1.5rem;
 }
-/*div del header que contiene el logo, buscador e iconos*/
+
+/* Ajuste general del div del header que contiene el Logo - Buscador - Iconos "carrito".. */
 header div{
     background-color: #ffffff;
     width: 100%; 
@@ -35,55 +40,59 @@ header div{
     justify-content: center;
 
 }
-/*LOGO*/
-.logoEmpresa{
 
+/* Esto es el logo de TecnoRoma*/
+.logoTecnoRoma{
     width: 10%;
     display: flex;
     justify-content: start;
 }
-/*Estilos para el div buscador | imput | boton*/
+
+/* Esto es la seccion del buscador */
 .buscador{
     width: 65%;
 }
-.formBuscador{
+.formularioBuscador{
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.textobuscador{
+.textoBuscador{
     width: 60%;
     padding: 10px;
     border-radius: 5px 0 0 5px;
     border: 2px solid #4f5bff;
     border-right: none;
-    
 }
-.botonBuscar{
+.botonBuscador{
     width: 10%;
     padding: 10px;
     border-radius: 0 5px 5px 0;
     border: 2px solid #4f5bff;
     border-left: none;
 }
-/* Estilos para los iconos de la interfaz */
-.logoInterfaz{
-    width: 20%;
 
+/* Estilos para los iconos del menu de usuario "Cuenta-Carrito-Favoritos */
+.menu_usuario{
+    width: 20%;
 }
-.iconosInterfaz{
+.iconos_menu_usuario{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-/* Estilos para el menú horizontal */
+/* Esto es la barra de menu horizontal*/
 .menuHorizontal{
     width: 100%;
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
-
 .menu{
     color: black;
     width: 100%;
@@ -94,153 +103,352 @@ header div{
     justify-content: space-around;
     align-items: center;
     border-top:2px solid  #4f5bff ;
+    border-bottom: 2px solid #4f5bff;
+    
 
 }
-/* Fin del header */
 
-
-
-
-/* Todo lo del main */
+/* ---------------------- AJUSTES AL MAIN ---------------------- */
+/* Ajuste general del main como tamaño-color */
 main{
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-/* Estilos para la sección de banners*/
-.videoBanner{
-    width: 100%;
 
+/*  Esto es la seccion del video*/
+.contenedorVideo{
+    width: 100%;
+    background-color: #000000;
 }
-.videoBanne{
+.video{
     width: 100%;
     height: 80%;
-    margin-bottom: 10px;
+    
 }
 
-/* Estilos para la sección de novedades /productos */
+/*  Esto es la seccion de tarjetas con categorias "accesorios-auriculares-computacion-hogar-smartwatch-parlantes"  */
+.contenedorTarjeta{
+    background-image:url(imagenes/baner_4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.categoriaTarjeta{
+    
+    display: flex;
+    width: 100%;
+    height: 100%;;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.tarjeta{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.fotoTarjeta{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin:0;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 5px 5px 10px 0 rgb(0, 0, 0);
+}
+.tituloTarjeta{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 251, 251);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color:black;
+    text-align: center;
+    margin: 0;
+    padding: 7px 0 ;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 5px 10px 0 rgb(0, 0, 0);
+}
 
-.novedades {
+/*  Esto es la seccion del banner con texto giratorio  */
+.contenedor-marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: deslizar 30s linear infinite;
+}
+@keyframes deslizar {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Esto es la sección de novedades /productos */
+
+.contenedorNovedades {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.tituloNovedades {
+
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    padding: 50px;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #000000;
     text-shadow: 2px 2px 4px #4f5bff;
-
+    margin-top: 20px;
+    padding: 20px;
 }
-/* Sección de novedades */
-.productos{
-    width: 100%;
+.novedades {
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    padding: 50px;
 }
-
-.fotosProductos{
-    width: 200px;
+.productosNovedades {
+    background-color: #e0e0f0;
+    max-width: 350px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-/* sección de ofertas */
-/* Sección de productos destacados */
-
-/* seccion de forma de contacto */
-
-.formularioContacto{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-.tituloFormulario{ 
-    width: 95%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    padding: 10px;
-    display: flex;
-    color: #4f5bff;
-    text-shadow: #1b1a1a 1px 1px 2px;
-
-}
-.texFormulario{
-    width: 100%;
-    display: flex;
-
-}
-.parrafoFormulario{
-    width: 30%;
-    padding: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    color: #1b1a1a;
-}
-.pForm{
-    width: 80%;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap:20px;
+    box-shadow: 2px 2px 5px 0 rgb(162, 191, 247);
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
-.divformulario {
-    background-color: #ffffff;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.fotoNovedades{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
 }
-.inicioFormulario{
-    width: 100%;
-    text-align: left;
+.nombreNovedades{
     padding: 20px;
-}
-.labelFormulario{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    color: #1b1a1a;
-    margin-bottom: 5px;
-}
-.inputLabel{
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #4f5bff;
-    margin-bottom: 10px;
-}
-.buttonForm{
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: #4f5bff 0px 4px 8px;
-    color: rgb(0, 0, 0);
+    margin: 0;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
-    cursor: pointer;
+    text-align: center;
+    
 }
 
-/* Todo lo del footer */        
 
+/* Esto es la sección de reseñas */
+
+.contenedorResenia {
+    background-image: url(imagenes/baner_reseña3.png) ;
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.tituloResenia {
+
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px #4f5bff;
+    margin-top: 20px;
+
+}
+.todasLasResenias {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.tarjetaResenia {
+    background-color: rgb(218, 218, 218);
+    max-width: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 2px 2px 30px 0 rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.fotoResenia {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 5px;
+}
+.cliente,
+.reseniaCliente,
+.fechaResenia {
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    align-content: baseline;/* coloca los ítems en línea */
+}
+.reseniaCliente {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;/* coloca los ítems en línea */
+    max-width: 100%;
+    text-align: start;
+}
+.iconosCalificacion{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* coloca los ítems en línea */
+    justify-content: center;
+    gap: 10px; /* espacio entre estrellas */
+}
+.iconosCalificacion li {
+    display: inline-block;
+}
+
+/* ---------------------- AJUSTES AL FOOTER  ---------------------- */
+/* Ajuste general del footer */
 footer{
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 
 }
+
+/* Esto es la seccion del banner de suscripcion*/
+
+.suscripcion {
+    background-color: #7d4dff;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 50px; 
+}
+.textoSuscripcion {
+    font-size: 1.2em; 
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    flex-shrink: 0;
+}
+.formularioSuscripcion {
+    display: flex;
+    gap: 15px;
+    flex-grow: 1;
+    max-width: 500px;
+    min-width: 280px;
+}
+.inputSuscripcion {
+    flex-grow: 1;
+    padding: 12px 18px; 
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1em;
+    outline: none;
+}
+.inputSuscripcion::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.inputSuscripcion:focus {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.buttonSuscripcion {
+    padding: 12px 25px; 
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 1em; 
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Esto es la seccion de medios de pagos*/        
+
+.seccionPago{
+    background-color: #b0b2d4;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccionPago p{
+    width: 40%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+.imgPagos{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.imgPagos img{
+    max-width: 60px;
+    max-height: 40px;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0 rgb(0, 0, 0);
+}
+
+/*  Esto es la seccion de los nav del footer  */
+
 .footerNav {
     width: 100%;
     padding: 50px;
@@ -252,15 +460,385 @@ footer{
     font-size: 1.2rem;
 
 }
-.ulfooter li{
-    line-height: 50;
+.ulFooter li{
+    
+    color: #4f5bff;
+}
+
+/*  Esto es la seccion de derechos de autor  */
+.propietario{
+    color: #ffffff;
+    background-color: #171718;
+    width: 100%;
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
 
 
 
+/* -------------------------- ESTO ES LA SECCION "PRODUCTOS" --------------------------- */
+.contenedorProductos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.tituloArt{ 
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #4f5bff;
+    text-shadow: #1b1a1a 1px 1px 2px;
 
+}
+.seccionArt{
+    width: 100%;
+    display: flex;
+}
+.categorias{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #4d4d50;
+    
+}
+.categorias button{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-left: 3px solid #000000;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+.categorias button:focus{
+    outline: none;
+    background-color: #c0c2eb;
+    box-shadow: #9fa1be 2px 0px 2px;
+}
+.seccion_novedades {
+    background-color: #25285c;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    border-radius: 5px;
+}
 
+.productos_novedades {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 200px;
+    gap:50px;
+    flex-wrap: wrap;
 
+}
+
+.productos_main {
+    background-color: #ffffff;
+    max-width: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 2px 2px 5px 0 rgb(162, 191, 247);
+    padding: 15px;
+    gap: 15px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.fotoProducto {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.tituloProducto,
+.precioProducto {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    align-content: baseline;
+}
+.precioProducto{
+    color: #e02a2a;
+    font-size: 1.2rem;
+}
+.controlCantidad{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    
+}
+.controlCantidad button{
+    background-color: #999aaa;
+    width: 20px;
+    height: 20px;;
+    border: none;
+    box-shadow: #25285c 0px 2px 4px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btnAgregar{
+    background-color: #999aaa;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: #25285c 0px 2px 4px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* -------------------------- ESTO ES LA SECCION "CARRITO"  --------------------------- */
+.carrito{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carrito h2{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.nombreProductoCarrito {
+    flex:2;
+    min-width: 150px;
+    font-weight: bold;
+}
+
+.item-carrito{
+    width: 80%;
+}
+.item-carrito .controlCantidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+
+.item-carrito button {
+    background-color: #686975;
+    width: 30px;
+    height: 30px;;
+    border: none;
+    box-shadow: #25285c 0px 2px 4px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.item-carrito span {
+    font-weight: 500;
+}
+/* -------------------------- ESTO ES LA SECCION "CONTACTO "  --------------------------- */
+
+.contenedorContacto{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tituloContacto{ 
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    color: #4f5bff;
+    text-shadow: #1b1a1a 1px 1px 2px;
+
+}
+.contacto{
+    width: 80%;
+    display: flex;
+    gap:20px;
+
+}
+.infoContacto{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    font-family: "Montserrat", sans-serif;
+    font-size:1rem;
+    color: #1b1a1a;
+    
+    
+}
+.ulContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ulContacto li {
+    display: flex;
+    align-items:center;
+    gap:8px;
+}
+.ulContacto li i{
+    font-size: 1.2rem;
+}
+
+/* Ajuse al formulario*/
+
+.divformulario {
+    background-color: #a3e6e6;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    
+}
+.inicioFormulario{
+    width: 80%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    
+}
+.labelFormulario{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    
+}
+.inputLabel{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4f5bff;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    color: #333131;
+}
+.inputLabel:focus{
+    outline: none;
+    border: 3px solid #4f5bff ;
+}
+.buttonForm{
+    background-color: #4f5bff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: #25285c 0px 4px 8px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* -------------------------- ESTO ES LA SECCION "PREFUNTAS FRECUENTES"  --------------------------- */
+.contenedorPreguntas{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.tituloPreguntas{ 
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    color: #4f5bff;
+    text-shadow: #1b1a1a 1px 1px 2px;
+
+}
+
+.preguntas{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 10px;
+
+}
+.preguntas h3{
+    font-family: "Montserrat", sans-serif;
+    font-size:1.5rem;
+    color: #4f5bff;
+}
+.preguntas p {
+    font-family: "Montserrat", sans-serif;
+    font-size:1.2rem;
+    color: #1b1a1a;
+}
+.imgPreguntas img {
+    max-width: 100px;
+    max-height: 60px;
+    margin:0;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 rgb(0, 0, 0);
+}
+/* otros  */
 
 ul {
     list-style: none;   /* Eliminar los puntos de la lista */
@@ -269,3 +847,10 @@ a {
     text-decoration: none;    /* Eliminar el subrayado de los enlaces */
     color: #4f5bff;   /* Cambiar el color de los enlaces */
 }
+
+button:hover {
+    background-color: rgba(235, 230, 230, 0.2); /* Fondo blanco */
+    color: #402391; /* Texto del color del fondo de la sección */
+}
+
+

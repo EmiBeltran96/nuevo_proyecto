@@ -11,205 +11,839 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+        <title>TecnoRoma</title>
 </head>
 
 <body>
-    <!-- Esto es el emcabezado -->
+    <!------------------------ ESTO ES EL ENCABEZADO ------------------------> 
     <header>
-        <!-- Logo de la empresa -->
+        <!-- Esto es la linea de margen superior de toda la pagina -->
         <section class="section"></section>
         <div>
-            <img class="logoEmpresa" src="imagenes/Logo2 (1).png" alt="Logo">
-            <!-- Nombre del negocio
-            <h1 class="nombre"> TecnoRoma </h1> -->
-
-            <!-- Esto es el slogan
-            <h2 class="slogan"> La tecnologia al alcance de tu mano </h2> -->
-
-            <!-- Esto es el buscador -->
+            <!-- Logo de la empresa -->
+            <img class="logoTecnoRoma" src="imagenes/Logo2 (1).png" alt="Logo">
+            <!-- Esto es la barra del buscador -->
             <div class="buscador">
-                <form class="formBuscador" action="#">
-                    <input class="textobuscador" type="text" placeholder="Buscar productos">
-                    <button class="botonBuscar" type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"
+                <form class="formularioBuscador" action="#">
+                    <input class="textoBuscador" type="text" placeholder="Buscar productos">
+                    <button class="botonBuscador" type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"
                             style="color: #4f5bff;"></i></button>
                 </form>
             </div>
-            <!-- Esto es el carrito de compras -->
-            <div class="logoInterfaz">
-                <ul class="iconosInterfaz">
+            <!-- Esto es la seccion de inicio - carrito de compras - favoritos -->
+            <div class="menu_usuario">
+                <ul class="iconos_menu_usuario">
                     <li><a href=""><i class="fa-solid fa-user fa-2x" style="color: #4f5bff;"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping fa-2x" style="color: #4f5bff;"></i></a></li>
-
+                    <li><a href="" id="iconoCarrito"><i class="fa-solid fa-cart-shopping fa-2x" style="color: #4f5bff;"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-star fa-2x" style="color: #4f5bff;"></i></a></li>
                 </ul>
             </div>
         </div>
-        <!-- 
-        Esto es el menu de navegacion 
-        -->
+        <!-- Esto es la barra del menu de navegacion -->
         <nav class="menuHorizontal">
             <ul class="menu">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
             </ul>
         </nav>
-        <!-- Esto es un iframe -->
-        <!--    iframe src="https:" frameborder="0"></!-->
-        <!-- Video ref de youtube -->
-
     </header>
 
-    <!-- Esto es el menu -->
-    <main class="main">
-        <!-- Esto es el video de fondo -->
-        <section class="videoBanner">
-            <video class="videoBanne" autoplay muted loop>
-                <source src="videos/Video_Listo_Texto_Mejorado (2).mp4"
-                    type="video/mp4">
+    <!--------------------------- ESTO ES EL MAIN "INICIO"---------------------------> 
+    <main class="main" id="inicio">
+
+        <!-- Esto es la seccion del video-->
+        <section class="contenedorVideo">
+            <video class="video" autoplay muted loop>
+                <source src="videos/Video_Listo_Texto_Mejorado (2).mp4" type="video/mp4">
             </video>
         </section>
-        <section>
-            <h2 class="novedades">Ultimas novedades</h2>
-            <div class="productos">
-                <div>
-                    <img class="fotosProductos" src="imagenes/Astronauta.jpeg"
-                        alt="astronauta">
-                    <h3>Astronauta</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
-                </div>
-                <div>
-                    <img class="fotosProductos" src="imagenes/MniImpresora.jpeg"
-                        alt="mini impresora">
-                    <h3>Mini Impresora</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
-                </div>
-                <div>
-                    <img class="fotosProductos" src="imagenes/Joyero.jpeg"
-                        alt="joyero">
-                    <h3>Joyero</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
-                </div>
+
+        <!-- Esto es la seccion tarjetas categorias "accesorios-auriculares-computacion-hogar-smartwatch-parlantes" -->
+        <section class="contenedorTarjeta">
+            <div class="categoriaTarjeta">
+                <a href="#">
+                    <div class="tarjeta" >
+                    <img class="fotoTarjeta" src="imagenes/tarjeta_accesorios.png"
+                        alt="sección accesorios">
+                    <h3 class="tituloTarjeta">Accesorios</h3>
+                    </div>
+                </a>
+                <a href="#"> 
+                    <div class="tarjeta">
+                    <img class="fotoTarjeta" src="imagenes/tarjeta_auriculares.png"
+                        alt="sección auriculares">
+                    <h3 class="tituloTarjeta">Auriculares</h3>
+                    </div>
+                </a>
+                <a href="#"> 
+                    <div class="tarjeta">
+                        <img class="fotoTarjeta" src="imagenes/tarjeta_pc.png"
+                            alt="sección computación">
+                        <h3 class="tituloTarjeta">Computación</h3>
+                    </div>
+                </a>
+                <a href="#"> 
+                    <div class="tarjeta">
+                        <img class="fotoTarjeta" src="imagenes/tarjeta_hogar.png"
+                            alt="seccion hogar">
+                        <h3 class="tituloTarjeta">Hogar</h3>
+                    </div>
+                </a>
+                <a href="#"> 
+                    <div class="tarjeta">
+                        <img class="fotoTarjeta" src="imagenes/tarjeta_reloj.png"
+                            alt="sección smartwatch ">
+                        <h3 class="tituloTarjeta">Smartwatch</h3>
+                    </div>
+                </a>
+                <a href="#"> 
+                    <div class="tarjeta">
+                        <img class="fotoTarjeta" src="imagenes/tarjeta_parlantes.png"
+                            alt="sección parlantes">
+                        <h3 class="tituloTarjeta">Parlantes</h3>
+                    </div>
+                </a>
             </div>
+            
         </section>
-        <section>
-            <h2 class="novedades"> Productos destacados</h2>
-            <div class="productos">
-                <div>
-                    <img class="fotosProductos" src="imagenes/Astronauta.jpeg"
-                        alt="astronauta">
-                    <h3>Astronauta</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
-                </div>
-                <div>
-                    <img class="fotosProductos" src="imagenes/MniImpresora.jpeg"
-                        alt="mini impresora">
-                    <h3>Mini Impresora</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
-                </div>
-                <div>
-                    <img class="fotosProductos" src="imagenes/Joyero.jpeg"
-                        alt="joyero">
-                    <h3>Joyero</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
-                </div>
+
+        <!-- Esto es la seccion del texto giratorio -->
+        <section class="contenedor-marquee">
+            <div class="marquee">
+                ¡Bienvenido a TecnoRoma! La tecnologia al alcance de tu mano.    &nbsp;  
+                ¡Bienvenido a TecnoRoma! La tecnologia al alcance de tu mano.    &nbsp;
+                ¡Bienvenido a TecnoRoma! La tecnologia al alcance de tu mano.    &nbsp;
             </div>
         </section>
 
-        <section>
-            <h2 class="novedades"> Ofertas </h2>
-            <div class="productos">
-                <div>
-                    <img class="fotosProductos" src="imagenes/Astronauta.jpeg"
-                        alt="astronauta">
-                    <h3>Astronauta</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
+        <!-- Esto es la seccion de novedades - destacados - ofertas -->
+        <section class="contenedorNovedades">
+        
+            <h2 class="tituloNovedades"> Ultimas novedades </h2>
+            <div class="novedades">
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/proyector_astronauta_2.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">PROYECTOR ASTRONAUTA</h3>
                 </div>
-                <div>
-                    <img class="fotosProductos" src="imagenes/MniImpresora.jpeg"
-                        alt="mini impresora">
-                    <h3>Mini Impresora</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/MniImpresora.jpeg" alt="astronauta">
+                    <h3 class="nombreNovedades">MINI IMPRESORA</h3>
                 </div>
-                <div>
-                    <img class="fotosProductos" src="imagenes/Joyero.jpeg"
-                        alt="joyero">
-                    <h3>Joyero</h3>
-                    <p>Descripcion del producto</p>
-                    <p>Precio: $1000</p>
+                
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/ASPIRADORA.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">ASPIRADORA ROBOT</h3>
                 </div>
             </div>
+            <h2 class="tituloNovedades"> Productos destacados </h2>
+            <div class="novedades">
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/ORGANIZADOR-SOBRE-INODORO.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">ORGANIZADOR</h3>
+                </div>
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/Parlante-jbl.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">PARLANTE JBL</h3>
+                </div>
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/TECLADO-GAMER.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">TECLADO GAMER</h3>
+                </div>
+            </div>
+            <h2 class="tituloNovedades"> Ofertas </h2>
+            <div class="novedades">
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/bola_led_luces_smart_usb.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">FOCO LED USB</h3>
+                </div>
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/SOPORTE DE CELULAR PINZA CON BRAZO FLEXIBLE. jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">SOPORTE DE CELULAR</h3>
+                </div>
+                <div class="productosNovedades">
+                    <img class="fotoNovedades" src="imagenes/MOPA-CENTRIFUGA.jpg" alt="astronauta">
+                    <h3 class="nombreNovedades">MOPA CENTRIFUGA</h3>
+                </div>
+                
+            </div>
+
         </section>
-        <section>
-            Reseñas
-            
+
+        <!--Esto es la seccion de las reseñas-->
+        <section class="contenedorResenia">
+        
+            <h2 class="tituloResenia"> Ustedes </h2>
+            <div class="todasLasResenias">
+                <div class="tarjetaResenia">
+                    <img class="fotoResenia" src="imagenes/Reseña_Sebastian.png" alt="astronauta">
+                    <h3 class="cliente">Sebastian</h3>
+                    <p class="reseniaCliente">"Adquirí un proyector de video para ver películas en casa y estoy muy satisfecho con él. La imagen es nítida y el tamaño de la proyección es perfecto. Definitivamente volvería a comprar aquí."</p>
+                    <p class="fechaResenia">15-05-2025</p>
+                    <div class="calificacion">
+                        <ul class="iconosCalificacion">
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tarjetaResenia">
+                    <img class="fotoResenia" src="imagenes/Reseña_Valentina.png" alt="astronauta">
+                    <h3 class="cliente">Valentina</h3>
+                    <p class="reseniaCliente">"Increíble la variedad de productos que tienen. Compré un parlante y la calidad del sonido es espectacular, ideal para mis reuniones con amigas. La página es fácil de navegar y los precios son muy buenos." </p>
+                    <p class="fechaResenia">03-03-2025</p>
+                    <div class="calificacion">
+                        <ul class="iconosCalificacion">
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tarjetaResenia">
+                    <img class="fotoResenia" src="imagenes/Reseña_Mateo.png" alt="astronauta">
+                    <h3 class="cliente">Mateo</h3>
+                    <p class="reseniaCliente"> "Mi nuevo smartwatch es genial. Me encanta cómo puedo monitorear mi actividad física. El proceso de compra fue sencillo y el envío llegó antes de lo esperado. ¡Un 10!"</p>
+                    <p class="fechaResenia">01-02-2025</p>
+                    <div class="calificacion">
+                        <ul class="iconosCalificacion">
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tarjetaResenia">
+                    <img class="fotoResenia" src="imagenes/Reseña_Sofia.png" alt="astronauta">
+                    <h3 class="cliente">Sofia</h3>
+                    <p class="reseniaCliente">"¡Me encantó mi proyector de astronauta ! Crea una atmósfera mágica en mi habitación, perfecta para relajarme. La atención al cliente fue muy amable cuando tuve una duda. ¡Recomendado!" </p>
+                    <p class="fechaResenia">03-11-2024</p>
+                    <div class="calificacion">
+                        <ul class="iconosCalificacion">
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tarjetaResenia">
+                    <img class="fotoResenia" src="imagenes/Reseña_Santiago.png" alt="astronauta">
+                    <h3 class="cliente">Santiago</h3>
+                    <p class="reseniaCliente">"¡Excelente servicio! Compré unos auriculares inalámbricos y la calidad del sonido es impresionante. La entrega fue un poco demorada pero estoy  muy contento con mi compra."</p>
+                    <p class="fechaResenia">06-09-2024</p>
+                    <div class="calificacion">
+                        <ul class="iconosCalificacion">
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star-half" style="color: #FFD43B;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        <!--nombre apellido direccion email telefono-->
-        <section class="formularioContacto">
-            <h2 class="tituloFormulario">Contacto</h2>
-            <div class="texFormulario">
-                <div class="parrafoFormulario">
-                    <p class="pForm">Si tienes alguna duda o consulta, por favor completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad.</p>
-                    <p class="pForm">Si prefieres, puedes enviarnos un correo </p>
+
+    </main>
+
+    <!--------------------------- ESTO ES LA SECCION "PRODUCTOS"---------------------------> 
+    <section class="contenedorProductos" id="productos" >
+        <!-- FILTRO DE CATEGORiAS -->
+        <h2 class="tituloArt">Productos</h2>
+        <div class="seccionArt">
+            <aside class="categorias">
+                <br>
+                <h2>Categorias</h2>
+                <br>
+                <button data-categoria="todos">Todos</button>
+                <button data-categoria="accesorios">Accesorios</button>
+                <button data-categoria="auriculares">Auriculares</button>
+                <button data-categoria="computacion">Computación</button>
+                <button data-categoria="hogar">Hogar</button>
+                <button data-categoria="parlantes">Parlantes</button>
+                <button data-categoria="smartwatch">Smartwatch</button>
+                
+            </aside>
+
+            <section class="seccion_novedades">
+                <!-- PRODUCTOS SECCION ACCESORIOS-->
+                <div class="productos_novedades" data-categoria="accesorios todos">
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/bola_led_luces_smart_usb.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">FOCO LED USB</h3>
+                        <h2 class="precioProducto">$5.500</h2>
+                        <div class="controlCantidad">
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto"> 1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/SOPORTE DE CELULAR PINZA CON BRAZO FLEXIBLE. jpg" alt="astronauta">
+                        <h3 class="tituloProducto">SOPORTE DE CELULAR PINZA CON BRAZO FLEXIBLE</h3>
+                        <h2 class="precioProducto">$7000</h2>
+                        <div class="controlCantidad">
+                            <button class="btnMenos">-</button>
+                            <span class="cantidadProducto">1</span>
+                            <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/amplificadorPantalla.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">AMPLIFICADOR DE PANTALLA - LUPA PARA CELULAR</h3>
+                        <h2 class="precioProducto">$8900</h2>
+                        <div class="controlCantidad">
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+                        
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/SOPORTEDEcELULAR.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">SOPORTE FLEXIBLE PARA CELULAR</h3>
+                        <h2 class="precioProducto">$5000</h2>
+                        <div class="controlCantidad">
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/LuzBici.jpeg" alt="astronauta">
+                        <h3 class="tituloProducto">LUZ PARA BICI</h3>
+                        <h2 class="precioProducto">$6000</h2>
+                        <div class="controlCantidad">
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/usb2.jpeg" alt="astronauta">
+                        <h3 class="tituloProducto">CABLE USB</h3>
+                        <h2 class="precioProducto">$2500</h2>
+                        <div class="controlCantidad">
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    
+                    </div>
+                </div>
+                <!-- PRODUCTOS SECCION AURICULARES-->
+                <div class="productos_novedades" data-categoria="auriculares todos">
+                    <div class="productos_main">
+                        <img class="fotoProducto" src="imagenes/auricular-samsung-original-.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Auricular Samsung Original</h3>
+                        <h2 class="precioProducto"> $5.500,00 </h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Auriculares-Samsung-bud-2.jpg alt="astronauta">
+                        <h3 class="tituloProducto">Auriculares Samsung bud 2</h3>
+                        <h2 class="precioProducto"> $69.900,00 </h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/AURI-JBL-WABE-BUDS.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">AURI JBL WABE BUDS</h3>
+                        <h2 class="precioProducto"> $185.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Auricular-Noga.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Auricular Noga Stormer HEX ST-HFX</h3>
+                        <h2 class="precioProducto"> $27.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/AURICULARES-BLUETOOTH-P47.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">AURICULARES BLUETOOTH P47</h3>
+                        <h2 class="precioProducto"> $13.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+                </div>
+                <!-- PRODUCTOS SECCION COMPUTACION-->
+                <div class="productos_novedades" data-categoria="computacion todos">
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Teclado Gamer-Netmak.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Teclado Gamer - Netmak</h3>
+                        <h2 class="precioProducto"> $23.800,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/PARLANTE-PC-NETMAk.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">PARLANTE PC NETMAK " NM-BORA "</h3>
+                        <h2 class="precioProducto"> $34.960,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/SILLA-GAMER.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">SILLA GAMER NETMAK " BEAST-N "</h3>
+                        <h2 class="precioProducto"> $300.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/TECLADO-GAMER.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">TECLADO GAMER MARCA TIME CON LUCES DE COLORES</h3>
+                        <h2 class="precioProducto"> $14.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+                </div>
+                <!-- PRODUCTOS SECCION HOGAR-->
+                <div class="productos_novedades"  data-categoria="hogar todos">
+                    <div class="productos_main">
+                        <img class="fotoProducto" src="imagenes/Sandwichera-ORYX.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Sandwichera ORYX</h3>
+                        <h2 class="precioProducto"> $45.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main">
+                        <img class="fotoProducto" src="imagenes/Tostadora-ORYX.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Tostadora ORYX</h3>
+                        <h2 class="precioProducto"> $43.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/MOPA-CENTRIFUGA.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">MOPA CENTRIFUGA</h3>
+                        <h2 class="precioProducto"> $25.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/ORGANIZADOR-SOBRE-INODORO.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">ORGANIZADOR SOBRE INODORO - 3 ESTANTES</h3>
+                        <h2 class="precioProducto"> $35.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Tender-Plegable.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Tender Plegable de Pared</h3>
+                        <h2 class="precioProducto"> $40.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Zapatero-Organizador.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Zapatero Organizador Extensible 4 Estantes TocLine</h3>
+                        <h2 class="precioProducto"> $50.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Balanza.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Balanza de Cocina SF-400</h3>
+                        <h2 class="precioProducto"> $12.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/ASPIRADORA.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">ASPIRADORA ROBOT XIAOMI VACUUM E10C</h3>
+                        <h2 class="precioProducto"> $380.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Astronauta.jpeg" alt="astronauta">
+                        <h3 class="tituloProducto">PROYECTOR LUZ ASTRONAUTA</h3>
+                        <h2 class="precioProducto"> $30.00,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/BatidorCafe.jpeg" alt="astronauta">
+                        <h3 class="tituloProducto">MINI BATIDOR DE CAFE</h3>
+                        <h2 class="precioProducto"> $14.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+                </div>
+                <!-- PRODUCTOS SECCION SMARTWATCH-->
+                <div class="productos_novedades" data-categoria="smartwatch todos">
+                    <div class="productos_main">
+                        <img class="fotoProducto" src="imagenes/XIAOMI-SMART-BAND-9.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">XIAOMI SMART BAND 9</h3>
+                        <h2 class="precioProducto"> $140.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Smartwatch+7correas.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Smartwatch + 7 correas + Auriculares BT</h3>
+                        <h2 class="precioProducto"> $48.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/SMARTWATCH-8-EN-1.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">SMARTWATCH 8 EN 1</h3>
+                        <h2 class="precioProducto"> $65.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/NETMAK-SMARTWATCH.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">NETMAK SMARTWATCH NM-PLUS-S GRIS!</h3>
+                        <h2 class="precioProducto"> $44.500,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/SMARTWATCH-NT-06.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">SMARTWATCH NT 06 Rosa Nitcom!</h3>
+                        <h2 class="precioProducto"> $35.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+                </div>
+                <!-- PRODUCTOS SECCION PARLANTES-->
+                <div class="productos_novedades"  data-categoria="parlantes todos">
+                    <div class="productos_main">
+                        <img class="fotoProducto" src="imagenes/Parlante-Kazz.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Parlante Kazz 8pulg 25W Rms Bt Linus</h3>
+                        <h2 class="precioProducto"> $68.090,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Parlante-jbl.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Parlante portátil jbl go 4 2w bluetooth ip67 negro</h3>
+                        <h2 class="precioProducto"> $95.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Parlante-Stromberg.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Parlante Stromberg portatil 20w rms bt ipxs tws burst</h3>
+                        <h2 class="precioProducto"> $90.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Parlante-Stromberg-2.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Parlante Stromberg portatil 10w rms subwoofer 1X2 25 spark</h3>
+                        <h2 class="precioProducto"> $59.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar</i> </button>
+                    </div>
+
+                    <div class="productos_main" >
+                        <img class="fotoProducto" src="imagenes/Parlante-portátil-Hopestar.jpg" alt="astronauta">
+                        <h3 class="tituloProducto">Parlante portátil Hopestar h53 35w bluetooth ipx6 negro lhope00052</h3>
+                        <h2 class="precioProducto"> $100.000,00</h2>
+                        <div class="controlCantidad"> 
+                        <button class="btnMenos">-</button>
+                        <span class="cantidadProducto">1</span>
+                        <button class="btnMas">+</button>
+                        </div>
+                        <button class="btnAgregar">Agregar </i> </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+<!--------------------------- ESTO ES LA SECCION "carrito"---------------------------> 
+    <section class="carrito">
+        <h2>🛒 Carrito de compras</h2>
+        <div class="items-carrito" id="itemsCarrito">
+            <p class="nombreProductoCarrito"></p>
+            <div class="controlCantidad " ></div>
+        </div>
+        <h2>Total: $<span id="totalCarrito">0</span></h2>
+</section>
+
+    <!--------------------------- ESTO ES LA SECCION "CONTACTO "  style="display: none;"---------------------------> 
+
+    <section class="contenedorContacto"   >
+            <h2 class="tituloContacto">Contacto</h2>
+            <div class="contacto">
+                <div class="infoContacto">
+                    <p class="pContacto">CONSULTÁ NUESTRO CATALOGO DE VENTAS POR MAYOR Y CONVERTITE EN REVENDEDOR</p>
+                    <ul class="ulContacto">
+                    <li><i class="fa-brands fa-whatsapp" style="color: #4f5bff;"></i>3815430020</li>
+                    <li><i class="fa-regular fa-envelope" style="color: #4f5bff;"></i>tecnoroma@gmail.com</li>
+                    <li><i class="fa-regular fa-clock" style="color: #4f5bff;"></i>Horario: Lun a Vie de 09 a 13 hs y 17 a 21 hs</li>
+                    <li><i class="fa-regular fa-map" style="color: #4f5bff;"></i>Las Heras 1500, S. M. de Tucumán, Tucumán</li>
+                    </ul>
                 </div>
                 <div class="divformulario">
                     <form class="inicioFormulario" action="https://formspree.io/f/xyzwqzra" method="POST">
                         <label class="labelFormulario">
-                            E-mail:
-                            <input class="inputLabel" type="email" name="email">
+                            Nombre:
+                            <input class="inputLabel"  type="text" name="name" placeholder="ej.: Juan Perez">
                         </label>
+                        
+                        <label class="labelFormulario">
+                            E-mail:
+                            <input class="inputLabel" type="email" name="email" placeholder="ej.: tuemail@email.com">
+                        </label>
+                        
+                        <label class="labelFormulario">
+                            Telefono:
+                            <input class="inputLabel" type="tel" name="phone" placeholder="ej.: 113656005">
+                        </label>
+                        
                         <label class="labelFormulario">
                             Mensaje:
-                            <textarea class="inputLabel" name="message"></textarea>
+                            <textarea class="inputLabel"rows="5" name="message" placeholder="ej.: Tu mensaje"></textarea>
                         </label>
+                        
                         <!-- your other form fields go here -->
                         <button  class="buttonForm" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
-        </section>
+    </section>
+    <!--------------------------- ESTO ES LA SECCION "PREFUNTAS FRECUENTES" --------------------------->
+        <sectioncar class="contenedorPreguntas" id="preguntas" >
+            <h2 class="tituloPreguntas">Preguntas frecuentes</h2>
+            <div class="preguntas">
+                <h3>¿Quienes somos? </h3>
+                <p>Somos una familia empeñada en buscar y acercarte productos divertidos, novedosos ,originales y practicos.</p>
+                
+                <h3>¿Qué medios de pago son aceptados? </h3>
+                <p>Podes abonar en efectivo (solo en el local), transferencia o los siguientes medios de pago:</p>
+                
+                <div class="imgPreguntas">
+                    <img class="" src="imagenes/visadebit@2x.png" alt="sección accesorios">
+                    <img class="" src="imagenes/visa@2x.png" alt="sección accesorios">
+                    <img class="" src="imagenes/mastercard@2x.png" alt="sección accesorios">
+                    <img class="" src="imagenes/tarjeta-naranja@2x.png" alt="sección accesorios">
+                    <img class="" src="imagenes/mercadopago@2xx.png" alt="sección accesorios">
+                    <img class="" src="imagenes/rapipago@2x.png" alt="sección accesorios">
+                    <img class="" src="imagenes/pagofacil@2x.png" alt="sección accesorios">
+                </div>
+                
+                <h3> ¿Dónde queda el local?</h3>
+                <p> Nos encontramos en: Las heras 1500 - S. M. de Tucumán, abierto de Lunes a Viernes de 9 a 13 hs y de 17 a 21 hs.</p>
+                <h3>¿Cómo se realizan los envíos? </h3>
+                <p> Trabajamos con: Andreani para todo el pais, y en Tucumán con cadeteria propia.</p>
+                <h3>¿Cuánto tarda en llegar el pedido? </h3>
+                <p> El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3 y 5 días hábiles luego de acreditado el pago.</p>
+                <p> En caso de ser de Tucumán, sera entregado en el mismo dia.</p>
 
-    </main>
-    <!-- esto es el pie de pagina-->
+                <h3>¿Cuál es el plazo para realizar un cambio directo? </h3>
+                <p> Puedes solicitar un cambio directo hasta 10 días luego de realizada la compra.</p>
+                <h3> Politica de Cambios y Devolución</h3>
+
+                <p> Todos los cambios de los productos se realizan en nuestra sucursal ubicada en San Miguel de Tucumán (sin excepción)</p>
+            </div>
+            
+        </sectioncar>
+    <!------------------------ ESTO ES EL FOOTER------------------------> 
     <footer class="footer">
+        <!--Esto es la seccion del formulario para recibir ofertas-->
+        <div class="suscripcion">
+            <p class="textoSuscripcion">Regístrate y recibe nuestras ofertas.</p>
+            <form class="formularioSuscripcion" action="https://formspree.io/f/xyzwqzra" method="POST">
+                <input type="email" name="email" class="inputSuscripcion" placeholder="Introduce tu correo electrónico">
+                <button type="submit" class="buttonSuscripcion">Enviar</button>
+            </form>
+        </div>
+        <div class="seccionPago">
+            <p>Medios de pago:</p>
+            <div class="imgPagos">
+                    <img src="imagenes/visadebit@2x.png" alt="medio de pago">
+                    <img src="imagenes/visa@2x.png" alt="medio de pago">
+                    <img src="imagenes/mastercard@2x.png" alt="medio de pago">
+                    <img src="imagenes/tarjeta-naranja@2x.png" alt="medio de pago">
+                    <img src="imagenes/mercadopago@2xx.png" alt="medio de pago">
+                    <img src="imagenes/rapipago@2x.png" alt="medio de pago">
+                    <img src="imagenes/pagofacil@2x.png" alt="medio de pago">
+                </div>
+        </div>
         <div class="footerNav">
-
-            <nav>
-                <h3>Categoria</h3>
+            <nav class="navFooter">
+                <h3>TecnoRoma</h3>
                 <ul class="ulFooter">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Preguntas frecuentes</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
                 </ul>
             </nav>
             <nav>
-                <h3>Redes sociales</h3>
+                <h3>Seguinos</h3>
                 <ul class="ulFooter">
-                    <li><a href=""  > <i class="fa-brands fa-square-facebook" style="color: #4f5bff;"></i> Facebook</a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram" style="color: #4f5bff;"></i>Instagram</a></li>
+                    <li><a href="https://www.facebook.com/tecnotuc.tecnotuc" target="_blank" > <i class="fa-brands fa-square-facebook" style="color: #4f5bff;"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/tecnoroma.ok/" target="_blank"> <i class="fa-brands fa-instagram" style="color: #4f5bff;"></i> Instagram</a></li>
                 </ul>
             </nav>
             <nav>
                 <h3>Contacto</h3>
                 <ul class="ulFooter">
-                    <li><a href=""> <i class="fa-brands fa-square-whatsapp" style="color: #4f5bff;"></i>Telefono</a></li>
-                    <li><a href=""><i class="fa-solid fa-envelope" style="color: #4f5bff;"></i> Email</a></li>
-                    <li><a href=""><i class="fa-solid fa-clock" style="color: #4f5bff;"></i> Horario de atencion</a></li>
-                    <li><a href=""> <i class="fa-regular fa-compass" style="color: #4f5bff;"></i>Ubicacion</a></li>
+                    <li><i class="fa-brands fa-whatsapp" style="color: #4f5bff;"></i> 3815430020</li>
+                    <li><i class="fa-regular fa-envelope" style="color: #4f5bff;"></i> tecnoroma@gmail.com</li>
+                    <li><i class="fa-regular fa-clock" style="color: #4f5bff;"></i> Lun a Vie de 09 a 13 hs y 17 a 21 hs</li>
+                    <li><i class="fa-regular fa-map" style="color: #4f5bff;"></i> Las Heras 1500, Tucumán</li>
                 </ul>
             </nav>
             <iframe
@@ -218,7 +852,11 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe> 
         </div>
+        <div class="propietario">
+            <p>Copyright TecnoRoma - 2025. Todos los derechos reservados.</p>
+        </div>
     </footer>
-</body>
 
-</html>
+    <script src="script.js"></script>
+
+</body>
